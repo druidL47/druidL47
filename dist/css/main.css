@@ -1,0 +1,120 @@
+.btn-blue {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer; }
+
+.btn-blue {
+  color: #fff;
+  background-color: #3fc3d4;
+  border-radius: 20px;
+  outline: none; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Montserrat", sans-serif; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+img {
+  width: 100%;
+  height: 100%; }
+
+.header-home-nav {
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3fc3d4;
+  padding: 5px;
+  text-align: center;
+  color: #fff; }
+  .header-home-nav h1 {
+    transform: translateX(50%); }
+  .header-home-nav ul {
+    display: flex;
+    justify-content: space-evenly; }
+    .header-home-nav ul li {
+      padding: 1rem; }
+      .header-home-nav ul li a {
+        color: #fff;
+        border-bottom: 2px transparent solid;
+        transition: all 0.5s; }
+        .header-home-nav ul li a:hover {
+          color: coral;
+          border-bottom: 2px coral solid; }
+
+.sec-nav {
+  display: flex;
+  height: 8vh;
+  padding: 0 10px;
+  justify-content: space-between;
+  align-items: center; }
+  .sec-nav ul {
+    display: flex;
+    justify-content: space-evenly; }
+    .sec-nav ul li {
+      margin-right: 1rem; }
+      .sec-nav ul li a {
+        color: gray;
+        transition: all 0.5s; }
+        .sec-nav ul li a:hover {
+          color: #3fc3d4; }
+
+#header-home .showcase {
+  height: 84vh;
+  text-align: center;
+  background: url("../asset/pic3.jpg") no-repeat center center/cover;
+  position: relative; }
+  #header-home .showcase .tex-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    #header-home .showcase .tex-box h2 {
+      font-family: "Dancing Script", cursive;
+      font-size: 46px;
+      margin-bottom: 5px; }
+    #header-home .showcase .tex-box p {
+      font-size: 64px;
+      color: #fff; }
+
+#home-a {
+  height: 100%;
+  padding: 10px; }
+  #home-a .slider {
+    margin: 2rempx; }
+    #home-a .slider .swiper-container {
+      width: 100%;
+      height: 100%;
+      margin: 10px; }
+    #home-a .slider .swiper-slide {
+      height: 500px;
+      border: 10px gray solid;
+      width: 200px;
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center; }

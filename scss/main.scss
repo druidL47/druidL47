@@ -1,0 +1,141 @@
+@import "utilities";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.header-home-nav {
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(63, 195, 212);
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  h1 {
+    transform: translateX(50%);
+  }
+
+  // height: 10vh;
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    // padding: 1.5px;
+    li {
+      padding: 1rem;
+      a {
+        color: #fff;
+        border-bottom: 2px transparent solid;
+        transition: all 0.5s;
+        &:hover {
+          color: coral;
+          border-bottom: 2px coral solid;
+        }
+      }
+    }
+  }
+}
+// secound- nav
+.sec-nav {
+  display: flex;
+  height: 8vh;
+
+  padding: 0 10px;
+  justify-content: space-between;
+  align-items: center;
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    li {
+      margin-right: 1rem;
+      a {
+        color: gray;
+        transition: all 0.5s;
+        &:hover {
+          color: rgb(63, 195, 212);
+        }
+      }
+    }
+  }
+}
+#header {
+  &-home {
+    // height: 100%;
+    .showcase {
+      height: 84vh;
+      text-align: center;
+      background: url("../asset/pic3.jpg") no-repeat center center/cover;
+      position: relative;
+      .tex-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        h2 {
+          font-family: "Dancing Script", cursive;
+          font-size: 46px;
+          margin-bottom: 5px;
+          // color: rgb(63, 195, 212);
+        }
+        p {
+          font-size: 64px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+#home {
+  &-a {
+    height: 100%;
+    padding: 10px;
+    // background-color: gray;
+    .slider {
+      margin: 2rempx;
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin: 10px;
+      }
+      .swiper-slide {
+        // background-color: gray;
+        // padding: 19px;
+        height: 500px;
+        border: 10px gray solid;
+        width: 200px;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+    }
+  }
+}
