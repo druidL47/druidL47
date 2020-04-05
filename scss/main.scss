@@ -54,6 +54,7 @@ img {
 .sec-nav {
   display: flex;
   height: 8vh;
+  background-color: #fff;
 
   padding: 0 10px;
   justify-content: space-between;
@@ -76,6 +77,11 @@ img {
 #header {
   &-home {
     // height: 100%;
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
     .showcase {
       height: 84vh;
       text-align: center;
@@ -145,6 +151,7 @@ img {
       height: 100%;
     }
     .swiper-slide {
+      border: 2px lightgray solid;
       text-align: center;
       font-size: 18px;
       background: #fff;
@@ -301,6 +308,77 @@ img {
           font-weight: bold;
           margin: 15px 0;
           color: black;
+        }
+      }
+    }
+  }
+  &-e {
+    .slider {
+      margin: 2rempx;
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin: 10px;
+      }
+      .swiper-slide {
+        // background-color: gray;
+        // padding: 19px;
+        height: 350px;
+        border: 2px rgb(63, 195, 212) solid;
+        width: 200px;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+    }
+  }
+  &-f {
+    // background-color: rgb(240, 234, 234);
+    .title {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+      color: gray;
+      font-weight: bold;
+      font-size: 22px;
+
+      margin: 18px 20px;
+      // justify-content: space-evenly;
+    }
+    .showcase {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2rem;
+      .item {
+        display: grid;
+        grid-gap: 20px;
+        margin: 15px 30px;
+        // justify-content: space-evenly;
+        grid-template-columns: 1fr 2fr;
+        .detail {
+          line-height: 2.5em;
+        }
+
+        .img {
+          width: 220px;
+          height: 220px;
+          border: lightseagreen 2px solid;
+          box-shadow: 2px 2px 2px lightblue;
+          border-radius: 10px;
         }
       }
     }
