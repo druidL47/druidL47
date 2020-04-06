@@ -243,6 +243,7 @@ img {
       height: 420px;
       border: 12px gray solid; }
   #home-d .container .right-box {
+    background-color: lightslategray;
     padding: 30px;
     text-align: left;
     line-height: 2em;
@@ -292,7 +293,7 @@ img {
   color: gray;
   font-weight: bold;
   font-size: 22px;
-  margin: 18px 20px; }
+  margin: 18px 10px; }
 
 #home-f .showcase {
   display: grid;
@@ -311,3 +312,134 @@ img {
       border: lightseagreen 2px solid;
       box-shadow: 2px 2px 2px lightblue;
       border-radius: 10px; }
+
+#home-g {
+  background: url(../asset/pb1.jpeg) no-repeat center center/cover;
+  height: 80vh;
+  position: relative; }
+  #home-g .container {
+    background-color: #f1efef;
+    opacity: 0.5;
+    z-index: 1;
+    position: absolute;
+    top: 80px;
+    bottom: 80px;
+    right: 200px;
+    left: 200px; }
+    #home-g .container .mySlides {
+      width: 100%;
+      height: 100%;
+      color: gray;
+      text-align: center;
+      line-height: 1.4em; }
+      #home-g .container .mySlides h2 {
+        color: black;
+        font-weight: bold;
+        font-size: 30px;
+        margin: 15px;
+        margin-bottom: 35px;
+        z-index: 2; }
+      #home-g .container .mySlides .name {
+        margin: 50px; }
+      #home-g .container .mySlides .lead {
+        color: black;
+        font-weight: bold; }
+    #home-g .container .prev,
+    #home-g .container .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: #0a0a0a;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none; }
+    #home-g .container .next {
+      right: 0;
+      border-radius: 3px 0 0 3px; }
+
+#footer-main .service {
+  background-color: #3fc3d4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 12vh; }
+  #footer-main .service .item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px;
+    grid-gap: 7px; }
+    #footer-main .service .item p {
+      line-height: 1.2em;
+      color: #fff;
+      margin-top: 10px;
+      text-align: start;
+      font-weight: bold; }
+      #footer-main .service .item p span {
+        font-size: 12px; }
+    #footer-main .service .item i {
+      color: #fff;
+      transform: translateX(30px); }
+
+#footer-main .infor {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  margin: 25px 20px; }
+  #footer-main .infor .services {
+    line-height: 3em; }
+    #footer-main .infor .services p {
+      color: gray; }
+  #footer-main .infor .extra {
+    line-height: 3em; }
+    #footer-main .infor .extra p {
+      color: gray; }
+  #footer-main .infor .contact h2 {
+    font-weight: bold;
+    color: blackl;
+    margin: 10px 0; }
+  #footer-main .infor .contact p {
+    color: gray;
+    line-height: 3em; }
+  #footer-main .infor .contact .icons {
+    margin-top: 10px; }
+    #footer-main .infor .contact .icons i {
+      margin-right: 20px;
+      color: gray;
+      font-size: 42px; }
+  #footer-main .infor .insg .pics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: none; }
+    #footer-main .infor .insg .pics .pic {
+      height: 170px; }
+
+#footer-main .form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  line-height: 2em; }
+  #footer-main .form .number h2 {
+    color: #3fc3d4;
+    font-size: 22px; }
+  #footer-main .form .number p {
+    color: gray; }
+  #footer-main .form .input input {
+    padding: 15px;
+    width: 400px;
+    border: none;
+    background-color: #ece7e7;
+    margin-right: 100px; }
+
+#footer-main .payment {
+  width: 400px;
+  margin: auto; }
+  #footer-main .payment i {
+    font-size: 40px;
+    margin: 20px;
+    color: gray; }
+
+#footer-main .copyright {
+  text-align: center; }
